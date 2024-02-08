@@ -8,16 +8,16 @@ const About = () => {
   return (
     <div className="bg-yellow-200 w-full h-full m-0 mt-20" >
       <div
-        className=" text-4xl font-mono h-96 font-bold  text-white"
+        className=" text-4xl font-mono xl:h-96 320:h-56 font-bold  text-white"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <p className="text-8xl ml-44 text-black mt-7">ABOUT US</p>
+        <p className="xl:text-8xl  320:text-5xl  ml-44 320:ml-2  text-black mt-7">ABOUT US</p>
       </div>
-      <p className=" border border-black w-8/12 h-4/5 ml-44    mt-5  p-7 bg-yellow-100 shadow-lg font-mono ">
+      <p className=" border border-black  xl:w-8/12 320:w-full  xl:h-4/5 320:text-sm  xl:ml-44 320:ml-0   xl:mt-5  xl:p-7 320:p-4 bg-yellow-100 shadow-lg font-mono ">
         Welcome to Food Zone, a culinary haven in the heart of Kerala, dedicated
         to crafting unforgettable dining experiences for our cherished guests.{" "}
         <br />
@@ -61,7 +61,7 @@ const About = () => {
         experience.
         <br /> Thank you for choosing Food Zone. We look forward to serving you
         and creating culinary memories that last a lifetime.
-        <div className="flex mt-4 ">
+        <div className="xl:flex 320:block mt-4 ">
           <p className="m-4 font-bold">Connect With Us For Offers And Updates  : </p>
           <p className="m-4">INSTA</p>
           <p className="m-4">FB</p>
@@ -70,17 +70,18 @@ const About = () => {
         </div>
         <div className="flex mb-3 mt-4"> 
         <img className="w-8 h-8 mr-4"  src="https://e7.pngegg.com/pngimages/137/787/png-clipart-location-icon-computer-icons-map-location-map-geolocation-symbol-thumbnail.png"/>
-        <p className="text-xl">LOCATION</p>
+        <p className="text-xl 320:text-lg">LOCATION</p>
         </div>
+        <div className="xl:w-full 320:w-1/2">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4015191.595793188!2d71.45523938750001!3d10.650462399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba795291c8474c1%3A0x52af3834a8c97c3!2sFOOD%20ZONE!5e0!3m2!1sen!2sin!4v1705251656981!5m2!1sen!2sin"
-          width="400"
+          width="   "
           height="300"
           style={{ border: 2 + 'px' }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        ></iframe></div>
       </p>
     </div>
   );

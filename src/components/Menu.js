@@ -162,8 +162,8 @@ const Menu = () => {
 
   return (
     <div className='bg-yellow-100 mt-20'>
-      <h1 className='text-4xl font-bold font-mono ml-40 '>MENU & ORDERS </h1>
-      <div className='flex flex-wrap w-10/12 ml-32'>
+      <h1 className='xl:text-4xl 320:text-3xl font-bold font-mono xl:ml-40 sm:ml-20 '>MENU & ORDERS </h1>
+      <div className='flex flex-wrap xl:w-10/12 xl:ml-32'>
         {foodData.map((food, index) => (
           <MenuCard key={index} foodData={food} />
         ))}

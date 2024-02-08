@@ -24,12 +24,14 @@ const MenuCard = ({ foodData }) => {
   }
   const ComputedPrice=foodData.Price * quantity
   return (
-    <div className="border border-black rounded-lg m-6 bg-black text-white shadow-lg  ">
-      <img className="w-56 h-40" src={foodData.img} />
+    <div className="border border-black rounded-lg m-6 bg-black text-white shadow-lg 320:w-2/3 xl:w-max  ">
+      <img className="xl:w-56 320:w-full h-40" src={foodData.img} />
       <span className="font-bold m-5 ml-0">{foodData.Food} </span>{" "}
       <span className="font-bold "> ₹{ComputedPrice} </span>
-      <div className="flex">
-        <h1 className="m-4"> Quantity : </h1>
+      {/* <p className="font-bold 320:block xl:hidden"> ₹{ComputedPrice} </p> */}
+      
+      <div className="xl:flex">
+        <h1 className="xl:m-4"> Quantity : </h1>
         <div className="flex">
           <button onClick={IncreaseQuantity} className="border text-black bg-white h-5 mt-5 w-5 mr-0  flex justify-center items-center   ">
             +

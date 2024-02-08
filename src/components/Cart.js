@@ -28,13 +28,13 @@ const Cart = () => {
 
   return (
     <div className="bg-yellow-100 min-h-screen mt-20 ">
-      <div className="container mx-auto p-8 ml-56">
-        <h1 className="text-4xl font-bold mb-8">My Cart</h1>
+      <div className="container mx-auto  p-8 xl:ml-56">
+        <h1 className="xl:text-4xl 320:text-4xl font-bold mb-8">My Cart</h1>
         {cartItems.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-4 shadow-md rounded-md">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            <div className="bg-white  320:p-5 shadow-md rounded-md 320:w-max 320:-ml-12">
               <h2 className="text-2xl font-bold mb-4">Cart Items</h2>
-              <table className="w-full ">
+              <table className="w-full  ">
                 <thead>
                   <tr>
                     <th className="border px-3 py-2">Item</th>
@@ -74,8 +74,8 @@ const Cart = () => {
           </div>
         ) : (
           <>
-          <div className="text-4xl m-44 mb-20 ml-80 font-bold font-mono ">Your Cart Is Empty  </div>
-          <img className="h-72 ml-96 w-72 -mt-5" src="https://cdn-icons-png.flaticon.com/512/4555/4555971.png"/></>
+          <div className="xl:text-4xl 320:text-2xl xl:m-44 mb-20 xl:ml-80 font-bold font-mono ">Your Cart Is Empty  </div>
+          <img className="xl:h-72 xl:ml-96 w-72 -mt-5" src="https://cdn-icons-png.flaticon.com/512/4555/4555971.png"/></>
         )}
       </div>
       {placeOrder ? <Bill cartItems={cartItems} total={CalculateTotal(cartItems)} /> : null}
