@@ -29,28 +29,28 @@ const Header = () => {
         className="h-28 w-28 m-4 mt-2 320:w-12 320:h-12  320:mr-0 "
         src="https://masterbundles.com/wp-content/uploads/2023/02/green@3x-366.png"
       />
-      <div className={`ml-36 320:ml-0 flex  ${isScrolled ? "mt-0" : "h-32"}`}>
+      <div className={`md:ml-36 320:ml-0 flex  md:justify-around ${isScrolled ? "mt-0" : "h-32"}`}>
         <Link to="/">
           {" "}
-          <p className="m-9 320:m-1  text-xl 320:text-sm    mt-10">HOME</p>
-        </Link>
-        <Link to="/about">
+          <p className="md:m-9 320:m-1  md:text-xl 320:text-sm    mt-10">HOME</p>
+          </Link>
+          <Link to="/about">
           {" "}
-          <p className="m-9 320:m-1 text-xl 320:text-sm mt-10">ABOUT US</p>
+          <p className="md:m-9 320:m-1 md:text-xl 320:text-sm mt-10">ABOUT US</p>
         </Link>
         <Link to="/menu">
           {" "}
-          <p className="m-9 320:m-1 text-xl 320:text-sm mt-10">MENU & ORDERS</p>{" "}
+          <p className="md:m-9 320:m-1 md:text-xl 320:text-sm mt-10">MENU & ORDERS</p>{" "}
         </Link>
         <Link to="/cart">
           {" "}
-          <p className="m-9 320:m-1 text-xl 320:text-sm mt-10">
+          <p className="md:m-9 320:m-1 md:text-xl 320:text-sm mt-10">
             CART - {cartITems.length} items
           </p>
         </Link>
         <Link to="/contact">
           {" "}
-          <p className="m-9 320:m-1 text-xl 320:text-sm mt-10">CONTACT</p>
+          <p className="md:m-9 320:m-1 md:text-xl 320:text-sm mt-10">CONTACT</p>
         </Link>
       </div>
     </div>
